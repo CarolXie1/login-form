@@ -13,6 +13,7 @@ div.login {
   align-items: center;
   flex: 0 0 auto;
  flex-direction: column;  
+  flex-direction: column;  
 }
 
 form {
