@@ -1,53 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge，chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>login form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
+  <div class="main">
+    <div class="panel panel-success">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-lg-offset-4 col-center-block" style="padding-top: 120px;float: none;display: block;margin-left: auto;margin-right: auto;">
+      <div class="panel-heading">
+        <h1 class="text text-center">Login Form</h1>
+      </div>
+
+      <div class="panel-body">
         <form>
-          <div class="panel panel-success">
-              <div class="panel-heading">
-                <h1>Login Form</h1>
-              </div>
-              <div class="panel-body">
-                    <div class="form-group">
-                      <label for="exampleInputUsername"><b>Username</b></label>
-                      <input type="username" class="form-control" id="exampleInputUsername" placeholder="Enter Username">
-                    </div>
-            
-                    <div class="form-group">
-                      <label for="exampleInputPassword1"><b>Password</b></label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-                    </div>
-            
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-            
-                    <button type="submit" class="form-control btn btn-success">Login</button>
-            
-                    <div class="button" style="background-color:#f1f1f1; padding: 16px;" > 
-                      <button type="button" class="cancelbtn" style="padding: 10px 18px; background-color: #f44336;">Cancel</button>
-                      <span class="password" style="float: right; padding-top: 16px;">Forgot <a href="#">password?</a></span>
-                    </div>
-              </div>
+          <div class="form-group">
+            <label for="exampleInputUsername"><b>Username</b></label>
+            <input type="username" class="form-control" id="exampleInputUsername" placeholder="Enter Username" required> 
+          </div>
+  
+          <div class="form-group">
+            <label for="exampleInputPassword1"><b>Password</b></label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" required>
+          </div>
+  
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+
+            <div class="justify-content"> 
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              <a href="#" class="text-success">Forgot your password?</a>
             </div>
+          </div>
+  
+          <button type="submit" class="form-control btn btn-success">Login</button>
+
+          <div class="text text-center">No account? <a href="#" class="text-success">Create a new account!</a></div>
         </form>
       </div>
     </div>
-  
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
-
 </html>
