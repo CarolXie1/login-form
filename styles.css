@@ -1,22 +1,14 @@
-.panel {
+ .panel {
   margin:auto;
   display: flex;
-  justify-content: center;                                                              
+  justify-content:center;                                                              
   align-items: center;
   flex: 0 0 auto;
   flex-direction: column;  
-  max-width: 550px;
-  height: 600px;
 }
 
 .panel-body{
   width: 95%;
-}
-
-form {
-  padding:20px;
-  border: 2px solid #D3D3D3;
-  border-radius:25px;
 }
 
 .justify-content{
@@ -34,4 +26,28 @@ label.form-check-label {
 
 .text {
   padding-top:10px;
+}
+
+@media screen and (min-width:641px){
+ .panel {
+   width: 550px;
+   margin-bottom: 10px;
+}
+form {
+  padding:20px;
+  border: 2px solid #D3D3D3;
+  border-radius:25px;
+}
+}
+
+@media screen and (min-height: 480px){
+  .panel {
+    margin-top:80px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .panel {
+    width: 95%;
+  }
 }
